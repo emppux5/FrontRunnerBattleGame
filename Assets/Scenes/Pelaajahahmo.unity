@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b13d07ccf1b96ee45963b85e1f61d1d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sideSpeed: 5
+  sideSpeed: 10
   armyGroup: {fileID: 0}
   armyFollowDistance: 1
 --- !u!212 &688838155
