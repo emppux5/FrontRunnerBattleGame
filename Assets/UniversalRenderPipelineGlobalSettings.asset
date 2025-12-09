@@ -62,8 +62,8 @@ MonoBehaviour:
       - rid: 8080297968876912644
       - rid: 8080297968876912645
       - rid: 8080297968876912646
-      - rid: 9125900544719192064
-      - rid: 9125900544719192065
+      - rid: 8080297969268817988
+      - rid: 8080297969268817989
     m_RuntimeSettings:
       m_List: []
   m_AssetVersion: 8
@@ -318,7 +318,7 @@ MonoBehaviour:
       data:
         m_Version: 1
         m_UseBicubicLightmapSampling: 0
-    - rid: 9125900544719192064
+    - rid: 8080297969268817988
       type: {class: PostProcessData/ShaderResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         stopNanPS: {fileID: 4800000, guid: 1121bb4e615ca3c48b214e79e841e823, type: 3}
@@ -338,7 +338,7 @@ MonoBehaviour:
         uberPostPS: {fileID: 4800000, guid: e7857e9d0c934dc4f83f270f8447b006, type: 3}
         finalPostPassPS: {fileID: 4800000, guid: c49e63ed1bbcb334780a3bd19dfed403, type: 3}
         m_ShaderResourcesVersion: 0
-    - rid: 9125900544719192065
+    - rid: 8080297969268817989
       type: {class: PostProcessData/TextureResources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         blueNoise16LTex:
