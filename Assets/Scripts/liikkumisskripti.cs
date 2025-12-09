@@ -12,6 +12,8 @@ public class liikkumisskripti : MonoBehaviour
 
     void Start()
     {
+        transform.rotation = Quaternion.identity;
+
         fixedY = transform.position.y;
 
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
@@ -32,6 +34,11 @@ public class liikkumisskripti : MonoBehaviour
 
         minX = leftBoundary.x + halfWidth;
         maxX = rightBoundary.x - halfWidth;
+
+        float centerX = (minX + maxX) / 2f;
+        Vector3 pos = transform.position;
+        pos.x = centerX;
+        transform.position = pos;
     }
 
     void Update()
@@ -45,6 +52,7 @@ public class liikkumisskripti : MonoBehaviour
         pos.y = fixedY;
 
         transform.position = pos;
+
         if (armyGroup != null)
         {
             Vector3 armyTargetPos = transform.position + Vector3.left * armyFollowDistance;
