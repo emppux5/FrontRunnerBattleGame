@@ -145,7 +145,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 231782850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e15f1d8b33a3d047841ab3802b1e5cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c9075e234de3bd4785b066eaa2bd0c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
@@ -192,13 +192,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402423784}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.0018408913, w: 0.99999833}
-  m_LocalPosition: {x: 0.5097, y: 11.3296, z: 0}
+  m_LocalRotation: {x: -0.0000152480325, y: 0.0057792477, z: 0.001043362, w: 0.9999828}
+  m_LocalPosition: {x: -0.45, y: 10.43, z: 0}
   m_LocalScale: {x: 2.3481638, y: 2.1018438, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 231782852}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.211}
+  m_LocalEulerAnglesHint: {x: -0.002, y: 0.662, z: 0.12}
 --- !u!114 &402423786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 402423784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f146b627dfe051b49ba6953841728980, type: 3}
+  m_Script: {fileID: 11500000, guid: 82cfb2457789ecc429f2b4b24de71ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundHeight: 10
@@ -232,6 +232,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -253,6 +255,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -369,7 +372,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 688838151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b13d07ccf1b96ee45963b85e1f61d1d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ce2422bd1f7ff643b3d8fbccca6bb07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sideSpeed: 12
@@ -395,6 +398,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -416,6 +421,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -483,6 +489,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -504,6 +512,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -527,7 +536,7 @@ Transform:
   m_GameObject: {fileID: 802695180}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.2, z: 0}
+  m_LocalPosition: {x: 0.76, y: 0.59, z: 0}
   m_LocalScale: {x: 2.3415802, y: 2.1668882, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -542,7 +551,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 802695180}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f146b627dfe051b49ba6953841728980, type: 3}
+  m_Script: {fileID: 11500000, guid: 82cfb2457789ecc429f2b4b24de71ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundHeight: 10
@@ -603,7 +612,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1431286203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfc5402c6fa083f40947778e2ec351df, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fa2f34db5eac1745b60d65d60523991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   soldiers: []
