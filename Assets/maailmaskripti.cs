@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WorldAutoScroll : MonoBehaviour
+public class automaattiskrollaus : MonoBehaviour
 {
     public float speed = 2f;
 

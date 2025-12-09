@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerArmy : MonoBehaviour
+public class apuriskripti : MonoBehaviour
 {
     public Transform[] soldiers;       
     public Transform playerTransform; 

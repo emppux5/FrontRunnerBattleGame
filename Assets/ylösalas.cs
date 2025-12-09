@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BackgroundLooper : MonoBehaviour
+public class taustapyöriiloopil : MonoBehaviour
 {
     public float backgroundHeight = 10f;
 

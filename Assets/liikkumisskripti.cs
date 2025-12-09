@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class liikkumisskripti : MonoBehaviour
 {
     public float sideSpeed = 5f;
     private float fixedY;
