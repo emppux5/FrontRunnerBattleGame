@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      miniboss_2vaihtoehto_0: -4017583628481787192
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
