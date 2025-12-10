@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a1db11695483d584c8d118ce14aeeacc
+guid: 0edd6216c49aecb43bf83da225193bd8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4017583628481787192
-    second: miniboss_2vaihtoehto_0
+      213: 7962159157692128938
+    second: avaruus_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: miniboss_2vaihtoehto_0
+      name: avaruus_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 14
-        width: 73
-        height: 50
+        x: 0
+        y: 0
+        width: 1003
+        height: 597
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ca0be8d9fcae38c0800000000000000
-      internalID: -4017583628481787192
+      spriteID: aaedc5f81954f7e60800000000000000
+      internalID: 7962159157692128938
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      miniboss_2vaihtoehto_0: -4017583628481787192
+      avaruus_0: 7962159157692128938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
