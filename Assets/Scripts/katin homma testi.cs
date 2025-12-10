@@ -74,19 +74,30 @@ public class katinhommatesti : MonoBehaviour
         CheckBattleEnd();
     }
 
+    [Header("UI")]
+    public GameObject gameOverPanel;
+
     // tarkistetaan onko pelaajat yhöä hengissä jos ei taistelu lopetetaan
     void CheckBattleEnd()
     {
         if (!PlayerIsAlive())
         {
             battleActive = false;
-            Debug.Log("Kuolit!  GAME OVER");
+            Debug.Log("Kuolit! GAME OVER");
+
+            if (gameOverPanel != null)
+                gameOverPanel.SetActive(true);
+
             OnPlayerDeath?.Invoke();
         }
         else if (!EnemyIsAlive())
         {
             battleActive = false;
-            Debug.Log(" Voitto!");
+            Debug.Log("Voitto!");
+
+            if (gameOverPanel != null)
+                gameOverPanel.SetActive(true);
+
             OnEnemyDefeated?.Invoke();
         }
     }

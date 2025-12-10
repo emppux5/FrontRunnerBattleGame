@@ -514,12 +514,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1096392073}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c8e52cdb21ceb049b4e88903dc87e5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b11d321ebe46f64e9baf5ca4f963c94, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  startTime: 10
-  timerText: {fileID: 0}
-  GameOverPanel: {fileID: 1453188453}
+  m_EditorClassIdentifier: Assembly-CSharp::katinhommatesti
+  playerUnits: 5
+  playerDamagePerUnit: 1
+  enemyUsesHp: 0
+  enemyUnits: 5
+  enemyHp: 150
+  enemyDamagePerUnit: 10
+  enemyShootInterval: 1
+  gameOverPanel: {fileID: 1453188453}
 --- !u!1 &1453188453
 GameObject:
   m_ObjectHideFlags: 0
