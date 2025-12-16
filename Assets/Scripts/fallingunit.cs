@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class FallingUnit : MonoBehaviour
 {
@@ -8,10 +9,13 @@ public class FallingUnit : MonoBehaviour
 
     private GateUI gateUI;
 
+    // Tapahtuma, joka ilmoittaa kun yksikkö tuhoutuu tai kerätään
+    public event Action OnUnitDestroyed;
+
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-        gateUI = GetComponent<GateUI>(); // ?? TÄRKEÄ RIVI
+        gateUI = GetComponent<GateUI>();
     }
 
     void Update()
@@ -22,9 +26,11 @@ public class FallingUnit : MonoBehaviour
             pos.y -= fallSpeed * Time.deltaTime;
             rectTransform.anchoredPosition = pos;
 
-            if (pos.y < -Screen.height)
+            // Rajan määrittely, milloin yksikkö tuhoutuu (kun putoaa pois näytöltä)
+            float bottomLimit = -GetComponentInParent<Canvas>().GetComponent<RectTransform>().rect.height / 2f - 100f;
+            if (pos.y < bottomLimit)
             {
-                Destroy(gameObject);
+                DestroyUnit();
             }
         }
     }
@@ -35,6 +41,8 @@ public class FallingUnit : MonoBehaviour
 
         collected = true;
 
+        Debug.Log("Bonus kerätty!");
+
         if (gateUI != null)
         {
             gateUI.ActivateGate();
@@ -43,6 +51,14 @@ public class FallingUnit : MonoBehaviour
         {
             Debug.LogWarning("GateUI puuttuu FallingUnitista!");
         }
+
+        DestroyUnit();
+    }
+
+    void DestroyUnit()
+    {
+        // Ilmoitetaan kuolemasta spawnerille
+        OnUnitDestroyed?.Invoke();
 
         Destroy(gameObject);
     }
