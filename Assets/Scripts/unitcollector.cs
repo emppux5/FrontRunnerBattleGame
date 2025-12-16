@@ -1,26 +1,17 @@
 using UnityEngine;
 
-public class GateTriggerUI : MonoBehaviour
+public class UnitCollector : MonoBehaviour
 {
     public RectTransform playerRectTransform;
-    public GateUI gateUI;
 
     void Update()
     {
-        if (playerRectTransform == null || gateUI == null)
-            return;
-
-        if (RectTransformOverlaps(playerRectTransform, GetComponent<RectTransform>()))
+        foreach (var unit in FindObjectsOfType<FallingUnit>())
         {
-            gateUI.ActivateGate();
-        }
-    }
-
-    private void OnTriggerUnitOverlap(FallingUnit unit)
-    {
-        if (unit != null)
-        {
-            unit.Collect();
+            if (RectTransformOverlaps(playerRectTransform, unit.GetComponent<RectTransform>()))
+            {
+                unit.Collect();
+            }
         }
     }
 
@@ -38,4 +29,3 @@ public class GateTriggerUI : MonoBehaviour
         return rect1.Overlaps(rect2);
     }
 }
-

@@ -3,7 +3,16 @@ using UnityEngine;
 public class GateUI : MonoBehaviour
 {
     public int bonusUnits = 10;
-    public PlayerUnits playerUnits;
+    private PlayerUnits playerUnits;
+
+    void Start()
+    {
+        playerUnits = FindObjectOfType<PlayerUnits>();
+        if (playerUnits == null)
+        {
+            Debug.LogWarning("PlayerUnits-komponenttia ei löytynyt pelistä!");
+        }
+    }
 
     public void ActivateGate()
     {
