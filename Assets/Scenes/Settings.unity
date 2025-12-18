@@ -581,7 +581,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: d9885ff8a8a88b349a7ee9591caeea3e, type: 3}
+  m_Resource: {fileID: 8300000, guid: 0efa6596012f9f249880dc7f3c521802, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -694,6 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf2f460471c28d4da16b820f6b709f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioSettings
+  musicSource: {fileID: 0}
   volumeSlider: {fileID: 1052104814}
   muteToggle: {fileID: 1256079403}
 --- !u!1 &656844891
