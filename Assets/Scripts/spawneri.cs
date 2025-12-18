@@ -24,7 +24,7 @@ public class FallingUnitSpawner : MonoBehaviour
         {
             timer = 0f;
             SpawnUnit();
-            canSpawn = false; // estet‰‰n spawn, kunnes nykyinen on ker‰tty tai tuhoutunut
+            canSpawn = false; 
         }
     }
 
@@ -39,7 +39,7 @@ public class FallingUnitSpawner : MonoBehaviour
 
         GameObject unitObj = Instantiate(fallingUnitPrefabs[prefabIndex], canvasRect);
         RectTransform rt = unitObj.GetComponent<RectTransform>();
-        rt.localScale = Vector3.one; // varmista skaalaus
+        rt.localScale = Vector3.one;
         rt.anchoredPosition = spawnPos;
 
         FallingUnit fallingUnit = unitObj.GetComponent<FallingUnit>();
@@ -50,9 +50,8 @@ public class FallingUnitSpawner : MonoBehaviour
     }
 
 
-    // Callback kun unit poistuu
     void OnUnitDestroyed()
     {
-        canSpawn = true; // sallitaan uuden spawn
+        canSpawn = true; 
     }
 }

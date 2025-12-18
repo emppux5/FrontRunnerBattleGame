@@ -9,7 +9,6 @@ public class FallingUnit : MonoBehaviour
 
     private GateUI gateUI;
 
-    // Tapahtuma, joka ilmoittaa kun yksikkö tuhoutuu tai kerätään
     public event Action OnUnitDestroyed;
 
     void Start()
@@ -26,7 +25,6 @@ public class FallingUnit : MonoBehaviour
             pos.y -= fallSpeed * Time.deltaTime;
             rectTransform.anchoredPosition = pos;
 
-            // Rajan määrittely, milloin yksikkö tuhoutuu (kun putoaa pois näytöltä)
             float bottomLimit = -GetComponentInParent<Canvas>().GetComponent<RectTransform>().rect.height / 2f - 100f;
             if (pos.y < bottomLimit)
             {
@@ -57,7 +55,7 @@ public class FallingUnit : MonoBehaviour
 
     void DestroyUnit()
     {
-        // Ilmoitetaan kuolemasta spawnerille
+
         OnUnitDestroyed?.Invoke();
 
         Destroy(gameObject);
