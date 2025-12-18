@@ -6,7 +6,7 @@ public class EnemyUI : MonoBehaviour
     private RectTransform rectTransform;
 
     public PlayerUnits playerUnits;
-    public int damageAmount = 5;
+    public int damageAmount = 10;
 
     void Start()
     {
